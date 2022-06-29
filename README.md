@@ -462,3 +462,307 @@ numbers** rounded up to **two digits** after the decimal separator.
 | 'A12b s17G'            | 330.00     | 12/1=12, 12+2=14, 17\*19=323, 323-7=316, **14+316=330** |
 | 'P34562Z q2576f H456z' | 46015.13   |                                                         |
 | 'a1A'                  | 0.00       |                                                         |
+
+## **15. Value of a String**
+
+Write a function, which finds the **sum** of the **ASCII** **codes** of
+the **letters** in a given **string**. Your tasks will be a bit harder
+because you will have to find the **sum** of **either** the
+**lowercase** or the **uppercase** letters.
+
+On the **first** line, you will receive the **string**.
+
+On the **second** line, you will receive **one of two possible inputs**:
+
+  - > If you receive "**UPPERCASE**" find the **sum** of **all**
+    > **uppercase** **English** **letters** in the previously received
+    > string
+
+  - > If you receive "**LOWERCASE**" find the **sum** of **all**
+    > **lowercase** **English** **letters** in the previously received
+    > string
+
+You should **not** sum the **ASCII** codes of any characters, which are
+**not** letters.
+
+At the end print the sum in the following format:
+
+  - > The total sum is: {sum}
+
+### Examples
+
+<table>
+<thead>
+<tr class="header">
+<th><strong>Input</strong></th>
+<th><strong>Output</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p><strong>['HelloFromMyAwesomePROGRAM',</strong></p>
+<p><strong>'LOWERCASE']</strong></p></td>
+<td><strong>The total sum is: 1539</strong></td>
+</tr>
+<tr class="even">
+<td><p><strong>['AC/DC',</strong></p>
+<p><strong>'UPPERCASE']</strong></p></td>
+<td><strong>The total sum is: 267</strong></td>
+</tr>
+</tbody>
+</table>
+
+## **16. Serialize String**
+
+You have been tasked to serialize a string. The serialization is done
+specially, in which a character from that string is saved with the
+indexes at which it is found.
+
+The input will consist array, containing a single string, which may
+consist of **ANY ASCII** characters. Your task is to serialize the
+string in the following way:
+
+{char}:{index1}/{index2}/{index3}
+
+The **char** will be the **character**, and the **indexes** will be the
+**indexes** it is **found** at in the **string**.
+
+### Examples
+
+<table>
+<thead>
+<tr class="header">
+<th><strong>Input</strong></th>
+<th><strong>Output</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>["abababa"]</strong></td>
+<td><p><strong>a:0/2/4/6</strong></p>
+<p><strong>b:1/3/5</strong></p></td>
+</tr>
+<tr class="even">
+<td><strong>["avjavamsdmcalsdm"]</strong></td>
+<td><p><strong>a:0/3/5/11</strong></p>
+<p><strong>v:1/4</strong></p>
+<p><strong>j:2</strong></p>
+<p><strong>m:6/9/15</strong></p>
+<p><strong>s:7/13</strong></p>
+<p><strong>d:8/14</strong></p>
+<p><strong>c:10</strong></p>
+<p><strong>l:12</strong></p></td>
+</tr>
+</tbody>
+</table>
+
+## **17. Deserialize String**
+
+Write a function, which takes the **output** from the **previous task**
+and turns it back into a **string**.
+
+Until you receive the line “**end**”, you will receive several lines of
+input on the console, in the following format:
+
+  - > "**{letter}:{index1}/{index2}/{index…}/{indexN}**"
+
+Your task is to take every **letter** and its **index** and **form a
+string** out of them.
+
+### Examples
+
+<table>
+<thead>
+<tr class="header">
+<th><strong>Input</strong></th>
+<th><strong>Output</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p><strong>['a:0/2/4/6',</strong></p>
+<p><strong>'b:1/3/5',</strong></p>
+<p><strong>'end']</strong></p></td>
+<td><strong>abababa</strong></td>
+</tr>
+<tr class="even">
+<td><p><strong>['a:0/3/5/11',</strong></p>
+<p><strong>'v:1/4',</strong></p>
+<p><strong>'j:2',</strong></p>
+<p><strong>'m:6/9/15',</strong></p>
+<p><strong>'s:7/13',</strong></p>
+<p><strong>'d:8/14',</strong></p>
+<p><strong>'c:10',</strong></p>
+<p><strong>'l:12',</strong></p>
+<p><strong>'end']</strong></p></td>
+<td><strong>avjavamsdmcalsdm</strong></td>
+</tr>
+</tbody>
+</table>
+
+## **18. Ascii Sumator**
+
+Write a function that prints a **sum of all characters between two given
+characters** (their **ASCII code**). On the **first line,** you will get
+a **character**. On the **second line,** you get **another character**.
+On the **last line**, you get a **random string**. Find all the
+characters **between the two given** and **print their ASCII sum**.
+
+### Example
+
+<table>
+<thead>
+<tr class="header">
+<th><strong>Input</strong></th>
+<th><strong>Output</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p><strong>['.',</strong></p>
+<p><strong>'@',</strong></p>
+<p><strong>'dsg12gr5653feee5']</strong></p></td>
+<td><strong>363</strong></td>
+</tr>
+<tr class="even">
+<td><p><strong>['?',</strong></p>
+<p><strong>'E',</strong></p>
+<p><strong>'@ABCEF']</strong></p></td>
+<td><strong>262</strong></td>
+</tr>
+<tr class="odd">
+<td><p><strong>['a',</strong></p>
+<p><strong>'1',</strong></p>
+<p><strong>'jfe392$#@j24ui9ne#@$']</strong></p></td>
+<td><strong>445</strong></td>
+</tr>
+</tbody>
+</table>
+
+## **19. Treasure Finder**
+
+Write a function that **decrypts a message** by a given **key** and
+gathers information about the hidden **treasure type** and its
+**coordinates.** On the **first line,** you will receive a **key
+(sequence of numbers).**
+
+On the **next few lines until you receive "find"** you will get lines of
+**strings**. You have to **loop through every string** and **decrease
+the ASCII code of each character** with a **corresponding number of the
+key** sequence. The way you choose a key number from the sequence is by
+just **looping through it**. If the **length of the key** sequence is
+**less than the string** sequence, you start **looping from the
+beginning of the key.** For more clarification see the example below.
+**After decrypting** the message, you will **get a type of treasure and
+its coordinates.** The **type** will be **between** the symbol **'&'**
+and the coordinates will be between the symbols **'\<'** and **'\>'**.
+For each line, **print the type and the coordinates** in the format:  
+**\`Found {type} at {coordinates}\`**
+
+### Example
+
+<table>
+<thead>
+<tr class="header">
+<th><strong>Input</strong></th>
+<th><strong>Output</strong></th>
+<th><strong>Comment</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p><strong>['1 2 1 3',</strong></p>
+<p><strong>'ikegfp'jpne)bv=41P83X@',</strong></p>
+<p><strong>'ujfufKt)Tkmyft'duEprsfjqbvfv=53V55XA',</strong></p>
+<p><strong>'find']</strong></p></td>
+<td><p><strong>Found gold at 10N70W</strong></p>
+<p><strong>Found Silver at 32S43W</strong></p></td>
+<td><p>We start looping through the first string and the key. When we reach the end of the key we start looping from the beginning of the key, but we continue looping through the string. (until the string is over)</p>
+<p>The first message is: <strong>"hidden&amp;gold&amp;at&lt;10N70W&gt;"</strong> so we print we found gold at the given coordinates</p>
+<p>We do the same for the second string</p>
+<p><strong>"thereIs&amp;Silver&amp;atCoordinates&lt;32S43W&gt;"</strong>(starting from the beginning of the key and the beginning of the string)</p></td>
+</tr>
+<tr class="even">
+<td><p><strong>['1 4 2 5 3 2 1',</strong></p>
+<p><strong>'Ulgwh"jt$ozfj!'kqqg(!bx"A3U237GC',</strong></p>
+<p><strong>'tsojPqsf$(lrne'$CYfqpshksdvfT$&gt;634O57YC',</strong></p>
+<p><strong>''stj)&gt;34W68Z@',</strong></p>
+<p><strong>'find']</strong></p></td>
+<td><p><strong>Found gold at 0S123E</strong></p>
+<p><strong>Found gold at 102N43W</strong></p>
+<p><strong>Found ore at 23S43W</strong></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+## **20. Melrah Shake**
+
+You are given a **string** of random characters and a **pattern** of
+random characters. You need to “shake off” (**remove**) all of the
+**border** occurrences of that pattern, in other words, the **very**
+**first** **match** and the **very last match** of the pattern you find
+in the string.
+
+When you successfully shake off a match, you **remove** from the pattern
+the character which corresponds to the **index** equal to **the
+pattern’s length / 2**. Then you continue to shake off the border
+occurrences of the new pattern until the pattern becomes **empty** or
+until there is **less** than the - needed for a shake, matches in the
+remaining string.
+
+In case you have found at least **two** matches, and you have
+successfully shaken them off, you print "**Shaked it.**" on the console.
+Otherwise, you print "**No shake.**", the remains of the main string,
+and you end the program. See the examples for more info.
+
+### Input
+
+  - The input will consist only of two lines
+
+  - On the first line, you will get a string of random characters
+
+  - On the second line, you will receive the pattern and that ends the
+    input sequence
+
+### Output
+
+  - You must print "**Shaked it.**" for every time you successfully do
+    the melrah shake
+
+  - If the melrah shake fails, you print "**No shake.**", and on the
+    next line you print what has remained of the main string
+
+### Constraints
+
+  - The two strings may contain **ANY** ASCII character
+
+  - Allowed time/memory: 250ms/16MB
+
+### Examples
+
+<table>
+<thead>
+<tr class="header">
+<th><strong>Input</strong></th>
+<th><strong>Output</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p><strong>['astalavista baby',</strong></p>
+<p><strong>'sta']</strong></p></td>
+<td><p><strong>Shaked it.</strong></p>
+<p><strong>No shake.</strong></p>
+<p><strong>alavi baby</strong></p></td>
+</tr>
+<tr class="even">
+<td><p><strong>['##mtm!!mm.mm*mtm.#',</strong></p>
+<p><strong>'mtm']</strong></p></td>
+<td><p><strong>Shaked it.</strong></p>
+<p><strong>Shaked it.</strong></p>
+<p><strong>No shake.</strong></p>
+<p><strong>##!!.*.#</strong></p></td>
+</tr>
+</tbody>
+</table>
